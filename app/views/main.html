@@ -1,0 +1,4 @@
+<div class="progress" ng-class="images ? 'progress--loading' : ''"></div>
+<div class="image__container" ng-repeat="image in images">
+    <a href="instagram://media?id={{image.id}}"><img class="image" imagepreload ng-src="{{ image.images.standard_resolution.url }}"></a>
+</div>
